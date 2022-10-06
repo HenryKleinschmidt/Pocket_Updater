@@ -142,6 +142,7 @@ namespace Pocket_Updater
                     form.Show();
                     
                     _updater.StatusUpdated += updater_StatusUpdated;
+                    _updater.UpdateProcessComplete += _updater_UpdateProcessComplete;
 
                     RunCoreUpdateProcess(Current_Dir, Current_Dir, Current_Dir);                    
                 }
@@ -181,6 +182,7 @@ namespace Pocket_Updater
                         form.Show();
 
                         _updater.StatusUpdated += updater_StatusUpdated;
+                        _updater.UpdateProcessComplete += _updater_UpdateProcessComplete;
 
                         RunCoreUpdateProcess(pathToUpdate, pathToUpdate, Current_Dir);
                     }
@@ -196,6 +198,16 @@ namespace Pocket_Updater
                 }
             }
         }
+
+        private void _updater_UpdateProcessComplete(object? sender, UpdateProcessCompleteEventArgs e)
+        {
+            //do stuff here to display summary
+            //e.InstalledCores List<string> containing all updated cores
+            //e.InstalledAssets List<string> containing all updated cores
+            //e.FirmwareUpdated bool true if a firmware was downloaded
+            form.textBox1.AppendText("Updates all done!");
+        }
+
         public void PopulateDrives()
         {
             try
