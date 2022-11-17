@@ -196,5 +196,10 @@ namespace Pocket_Updater
             dataGridView1.Rows.Clear();
             ReadPlatforms(Pocket_Drive.Text);
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

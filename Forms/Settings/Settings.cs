@@ -11,12 +11,12 @@ namespace Pocket_Updater
             InitializeComponent();
           
             //Tooltips
-            toolTip1.SetToolTip(pictureBox1, "This is an Optional setting to use a Personal GitHub Token to avoid Rate Limit Issues/Errors.");
+            toolTip1.SetToolTip(pictureBox1, "This is an optional setting to use a personal GitHub token to avoid rate limit issues/errors.");
             toolTip2.SetToolTip(pictureBox2, "This will preserve any Custom Core Images, Core Naming, and Category changes made manually.");
             toolTip3.SetToolTip(pictureBox3, "This will enable/disable Arcade Rom and Core Bios Files.");
-            toolTip4.SetToolTip(pictureBox4, "This will enable/disable the downloading of Pocket Firmware Updates.");
-            toolTip5.SetToolTip(pictureBox5, "This will enable/disable the downloading of Pre-Release Cores.");
-            toolTip6.SetToolTip(pictureBox6, "This will Delete Cores from your Pocket's SD Card that you have unchecked for Updating/Downloading.");
+            toolTip4.SetToolTip(pictureBox4, "This will enable/disable the downloading of pocket firmware updates.");
+            toolTip5.SetToolTip(pictureBox5, "This will enable/disable the downloading of Pre-Release cores.");
+            toolTip6.SetToolTip(pictureBox6, "This will delete cores from your pocket's SD card that you have unchecked for updating/downloading.");
 
             //Read Settings Json file
             ReadSettingsAsync();
@@ -150,6 +150,21 @@ namespace Pocket_Updater
             Close();
         }
         private void Settings_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Skipped_CheckedChanged(object sender, EventArgs e)
         {
 
         }

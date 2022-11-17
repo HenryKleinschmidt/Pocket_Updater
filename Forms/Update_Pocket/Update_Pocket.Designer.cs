@@ -44,9 +44,9 @@
             this.Button_Removable.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_Removable.Enabled = false;
             this.Button_Removable.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button_Removable.Location = new System.Drawing.Point(413, 28);
+            this.Button_Removable.Location = new System.Drawing.Point(169, 135);
             this.Button_Removable.Name = "Button_Removable";
-            this.Button_Removable.Size = new System.Drawing.Size(125, 41);
+            this.Button_Removable.Size = new System.Drawing.Size(80, 25);
             this.Button_Removable.TabIndex = 1;
             this.Button_Removable.Text = "Update";
             this.Button_Removable.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(198, 78);
+            this.comboBox1.Location = new System.Drawing.Point(138, 80);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(209, 33);
+            this.comboBox1.Size = new System.Drawing.Size(232, 23);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Visible = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -67,13 +67,13 @@
             // 
             this.Button_Refresh.BackColor = System.Drawing.Color.Transparent;
             this.Button_Refresh.BackgroundImage = global::Pocket_Updater.Properties.Resources.refresh;
-            this.Button_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Button_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Button_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_Refresh.FlatAppearance.BorderSize = 0;
             this.Button_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Refresh.Location = new System.Drawing.Point(413, 78);
+            this.Button_Refresh.Location = new System.Drawing.Point(376, 78);
             this.Button_Refresh.Name = "Button_Refresh";
-            this.Button_Refresh.Size = new System.Drawing.Size(39, 38);
+            this.Button_Refresh.Size = new System.Drawing.Size(25, 25);
             this.Button_Refresh.TabIndex = 4;
             this.Button_Refresh.UseVisualStyleBackColor = true;
             this.Button_Refresh.Visible = false;
@@ -86,9 +86,9 @@
             this.comboBox2.Items.AddRange(new object[] {
             "Current Directory",
             "Removable Storage"});
-            this.comboBox2.Location = new System.Drawing.Point(175, 33);
+            this.comboBox2.Location = new System.Drawing.Point(138, 30);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(232, 33);
+            this.comboBox2.Size = new System.Drawing.Size(232, 23);
             this.comboBox2.TabIndex = 5;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -96,9 +96,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Location = new System.Drawing.Point(31, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 25);
+            this.label1.Size = new System.Drawing.Size(101, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Update Location:";
             // 
@@ -106,9 +106,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 81);
+            this.label2.Location = new System.Drawing.Point(11, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 25);
+            this.label2.Size = new System.Drawing.Size(121, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pocket Drive Letter:";
             this.label2.Visible = false;
@@ -123,9 +123,9 @@
             // 
             // Update_Pocket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 134);
+            this.ClientSize = new System.Drawing.Size(418, 172);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox2);

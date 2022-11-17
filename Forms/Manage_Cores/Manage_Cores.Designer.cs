@@ -41,11 +41,12 @@
             // 
             // Button_Save
             // 
+            this.Button_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Button_Save.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button_Save.Location = new System.Drawing.Point(352, 633);
-            this.Button_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Save.Location = new System.Drawing.Point(239, 526);
+            this.Button_Save.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Button_Save.Name = "Button_Save";
-            this.Button_Save.Size = new System.Drawing.Size(111, 45);
+            this.Button_Save.Size = new System.Drawing.Size(80, 25);
             this.Button_Save.TabIndex = 1;
             this.Button_Save.Text = "Save";
             this.Button_Save.UseVisualStyleBackColor = true;
@@ -63,13 +64,14 @@
             this.Enabled,
             this.CoreName,
             this.CoreAuthor});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 7);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(790, 606);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 516);
             this.dataGridView1.TabIndex = 3;
             // 
             // Enabled
@@ -103,14 +105,14 @@
             // 
             // CoreSelector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(814, 689);
+            this.ClientSize = new System.Drawing.Size(564, 561);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Button_Save);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.MaximizeBox = false;
             this.Name = "CoreSelector";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

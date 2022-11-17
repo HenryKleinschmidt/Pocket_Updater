@@ -290,5 +290,20 @@ namespace Pocket_Updater
             Organize_Cores form = new Organize_Cores();
             form.Show();
         }
+
+        private void gitHubRepoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

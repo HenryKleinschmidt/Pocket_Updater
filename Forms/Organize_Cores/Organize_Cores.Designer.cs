@@ -46,9 +46,10 @@
             // 
             this.Save.Enabled = false;
             this.Save.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Save.Location = new System.Drawing.Point(489, 21);
+            this.Save.Location = new System.Drawing.Point(465, 12);
+            this.Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(150, 41);
+            this.Save.Size = new System.Drawing.Size(100, 25);
             this.Save.TabIndex = 2;
             this.Save.Text = "Organize";
             this.Save.UseVisualStyleBackColor = true;
@@ -58,13 +59,14 @@
             // 
             this.Button_Refresh.BackColor = System.Drawing.Color.Transparent;
             this.Button_Refresh.BackgroundImage = global::Pocket_Updater.Properties.Resources.refresh;
-            this.Button_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Button_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Button_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_Refresh.FlatAppearance.BorderSize = 0;
             this.Button_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Refresh.Location = new System.Drawing.Point(413, 22);
+            this.Button_Refresh.Location = new System.Drawing.Point(285, 15);
+            this.Button_Refresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Button_Refresh.Name = "Button_Refresh";
-            this.Button_Refresh.Size = new System.Drawing.Size(39, 38);
+            this.Button_Refresh.Size = new System.Drawing.Size(20, 20);
             this.Button_Refresh.TabIndex = 16;
             this.Button_Refresh.UseVisualStyleBackColor = true;
             this.Button_Refresh.Click += new System.EventHandler(this.Button_Refresh_Click_1);
@@ -73,19 +75,22 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 29);
+            this.label3.Location = new System.Drawing.Point(11, 18);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 25);
+            this.label3.Size = new System.Drawing.Size(121, 15);
             this.label3.TabIndex = 15;
             this.label3.Text = "Pocket Drive Letter:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Pocket_Drive
             // 
             this.Pocket_Drive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Pocket_Drive.FormattingEnabled = true;
-            this.Pocket_Drive.Location = new System.Drawing.Point(198, 26);
+            this.Pocket_Drive.Location = new System.Drawing.Point(133, 14);
+            this.Pocket_Drive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Pocket_Drive.Name = "Pocket_Drive";
-            this.Pocket_Drive.Size = new System.Drawing.Size(209, 33);
+            this.Pocket_Drive.Size = new System.Drawing.Size(148, 23);
             this.Pocket_Drive.TabIndex = 14;
             this.Pocket_Drive.SelectedIndexChanged += new System.EventHandler(this.Pocket_Drive_SelectedIndexChanged);
             // 
@@ -109,7 +114,8 @@
             this.CoreName,
             this.CoreCategory});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dataGridView1.Location = new System.Drawing.Point(12, 75);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 45);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -123,7 +129,7 @@
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 754);
+            this.dataGridView1.Size = new System.Drawing.Size(562, 452);
             this.dataGridView1.TabIndex = 20;
             // 
             // CoreName
@@ -142,16 +148,17 @@
             // 
             // Organize_Cores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(827, 841);
+            this.ClientSize = new System.Drawing.Size(579, 505);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Button_Refresh);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Pocket_Drive);
             this.Controls.Add(this.Save);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Organize_Cores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
