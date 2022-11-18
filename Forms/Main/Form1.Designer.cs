@@ -39,6 +39,7 @@
             this.clearLogFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.v138ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hyperV02ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Button_Pocket = new System.Windows.Forms.Button();
             this.Button_Cores = new System.Windows.Forms.Button();
             this.Button_Settings = new System.Windows.Forms.Button();
@@ -126,7 +127,8 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.v138ToolStripMenuItem});
+            this.v138ToolStripMenuItem,
+            this.hyperV02ToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
@@ -134,10 +136,20 @@
             // 
             // v138ToolStripMenuItem
             // 
+            this.v138ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.v138ToolStripMenuItem.Enabled = false;
             this.v138ToolStripMenuItem.Name = "v138ToolStripMenuItem";
-            this.v138ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
-            this.v138ToolStripMenuItem.Text = "v1.3.8";
+            this.v138ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.v138ToolStripMenuItem.Text = "Based on RetroDriven v1.3.8";
             this.v138ToolStripMenuItem.Click += new System.EventHandler(this.v138ToolStripMenuItem_Click);
+            // 
+            // hyperV02ToolStripMenuItem
+            // 
+            this.hyperV02ToolStripMenuItem.CheckOnClick = true;
+            this.hyperV02ToolStripMenuItem.Enabled = false;
+            this.hyperV02ToolStripMenuItem.Name = "hyperV02ToolStripMenuItem";
+            this.hyperV02ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.hyperV02ToolStripMenuItem.Text = "hyper v0.2";
             // 
             // Button_Pocket
             // 
@@ -345,5 +357,6 @@
         private ToolStripMenuItem v138ToolStripMenuItem;
         private TableLayoutPanel tableLayoutPanel1;
         private ToolStripMenuItem createzipArchiveOnSDCardToolStripMenuItem;
+        private ToolStripMenuItem hyperV02ToolStripMenuItem;
     }
 }
