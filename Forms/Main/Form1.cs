@@ -1,6 +1,8 @@
 using Analogue;
 using pannella.analoguepocket;
+using System;
 using System.Diagnostics;
+using System.IO.Compression;
 using System.Net;
 using System.Net.Http.Headers;
 using System.Security.Policy;
@@ -302,6 +304,29 @@ namespace Pocket_Updater
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createzipArchiveOnSDCardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Zip|*.zip";
+            saveFileDialog1.Title = "Save Analogue Pocket SD Card archive to:";
+            saveFileDialog1.FileName = "pocketSD-" + DateTime.Now.ToString("M-d-yyyy") + ".zip";
+            saveFileDialog1.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog1.FileName != "")
+            {
+                string wheretostore = saveFileDialog1.FileName;
+                var exepath = AppDomain.CurrentDomain.BaseDirectory;
+                ZipFile.CreateFromDirectory(exepath, wheretostore, CompressionLevel.NoCompression, true);
+            }
+            //ZipFile.ExtractToDirectory(zipPath, extractPath);
+        }
+
+        private void v138ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
